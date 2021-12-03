@@ -1,0 +1,253 @@
+<html>
+
+<head>
+
+<title>BOOKING</title>
+
+<style>
+
+.a{ width:1300; height:140;
+}
+
+body
+
+{
+
+background-image: url('reserve.png');
+ 
+background-repeat: no-repeat; background-attachment: fixed;
+}
+
+.main_div
+
+{
+
+margin:20px;
+
+}
+
+.c{
+
+background-color:#696969; border:5 slid white; position:absolute;
+padding-top:6px; padding-bottom:6px;
+}
+
+.d{ width:257px; height:30px;
+border-radius:20px; background-color:#999999;
+}
+ 
+.head
+
+{
+
+padding-left:280;
+
+}
+
+.textbox
+
+{
+
+size:100; height:30;
+border-radius:10px;
+
+}
+
+.letter
+
+{
+
+font-size:25;
+
+font-weight:bolder; font-style:italic;
+}
+
+.fset
+
+{
+
+width:500;
+
+}
+ 
+.button_size
+
+{
+
+font-size:20; color:white; font-style:bold;
+}
+
+.rest
+
+{
+
+border-radius:10px; background-color:black;
+}
+
+.det
+
+{
+
+font-size:25;
+
+font-weight:bolder; color:yellow; align:center;
+}
+
+</style>
+
+<script>
+ 
+function book()
+
+{
+
+var a,c,add,child,adult; a=Number(document.getElementById("first").value); b=Number(document.getElementById("second").value); adult=(a*2000);
+child=(b*1000); add=child+adult;
+document.getElementById("result").value= add; document.getElementById("r1").value= adult; document.getElementById("r2").value= child;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="main_div">
+
+<img class="a" src="home_banner.jpg">
+
+<div><div class="head"></div><br>
+
+<div class="head">
+
+<div class="c">
+ 
+<a href="home.html"><button class="d" size="50"><font class="button_size" >HOME</font></button></a>
+
+<button class="d" size="50"><font class="button_size">SEVICES</font></button>
+
+<button class="d" size="50"><font class="button_size">CONTACT US</font></button>
+
+</div><br><br><br>
+
+</div>
+
+</div>
+
+<div>
+
+<center>
+
+<fieldset class="fset">
+
+<legend align="center"><font class="det">ENTER GIVEN DETAILS</font></legend>
+
+<table>
+
+<tr>
+
+<td><font class="letter">Checkin:</font></td>
+
+<td><input type="date" class="textbox" ></td>
+
+</tr>
+
+<tr>
+
+<td><font class="letter">Checkout:</font></td>
+
+<td><input type="date" class="textbox" ></td>
+ 
+</tr>
+
+<tr>
+
+<td> <font class="letter">Adults:</font></td>
+
+<td> <input type="text" class="textbox" id="first"></td>
+
+</tr>
+
+<tr>
+
+<td> <font class="letter">Childrens:</font></td>
+
+<td><input type="text" class="textbox" id="second"></td>
+
+</tr>
+
+<tr>
+
+<td><font class="letter">Room type:</font></td>
+
+<td><select option="dropdown" class="textbox">
+
+<option value="single room"> &nbsp; single room</option>
+
+<option value="double room"> &nbsp; double room</option>
+
+<option value="family room"> &nbsp; family room</option>
+
+<option value="multiple room"> &nbsp; multiple room</option>
+
+</select></td>
+
+</tr>
+
+<tr>
+
+<td colspan="2" rowspan="1" align="center">
+ 
+<button onclick="book()" class="rest" ><font class="button_size"
+>BOOK</font></button></td>
+
+</tr>
+
+<tr>
+
+<td><font class="letter">Adults room charge:</font></td>
+
+<td><input type="text" class="textbox" id="r1"></td>
+
+</tr>
+
+<tr>
+
+<td><font class="letter">Childrens room charge:</font></td>
+
+<td><input type="text" class="textbox" id="r2"></td>
+
+</tr>
+
+<tr>
+
+<td><font class="letter">Total amount:</font></td>
+
+<td><input type="text" class="textbox" id="result"></td>
+
+</tr>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<a href="payment.html"> <button type="submit" class="rest" onclick="alert('confirm hotel reserved!')"><font class="button_size">PAY NOW</font></button>
+
+</td>
+ 
+</tr>
+
+</table>
+
+</center>
+
+</fieldset>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,156 @@
+<html>
+
+<head>
+
+<title>PAYMENT</title>
+
+<style>
+
+.main_div
+
+{
+
+margin:20px;
+
+}
+
+.a{ width:1300; height:140;
+ 
+}
+
+.fset
+
+{
+
+width:600;
+
+}
+
+.att{
+
+font-size:27;
+
+font-family:italic;
+
+}
+
+.button_size
+
+{
+
+font-size:20; color:white; font-style:bold;
+}
+
+.rest
+
+{
+
+border-radius:10px; background-color:black;
+}
+ 
+body
+
+{
+
+background-image: url('payment.png'); 
+background-repeat: no-repeat;
+ background-attachment: fixed;
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main_div">
+
+<div><img class="a" src="home_banner.jpg"></div>
+
+
+
+<center><font size="6" color="red">Select a payment method</font></center>
+
+<center>
+
+<fieldset class="fset">
+
+
+
+<font size="6">Another payment method</font><hr>
+
+<table>
+
+<form>
+
+<tr>
+ 
+<td><input type="radio"></td>
+
+<td><font class="att">
+
+Add Debit/Creadit/ATM card</font><br>
+
+<img src="visa.png" height="60" width="60">
+
+<img src="ms-card.png" height="60" width="60">
+
+<img src="rupay.png" height="60" width="60"><br>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><input type="radio"></td>
+
+<td>
+
+<font class="att">Net Banking</font><br>
+
+<select name="dropdown">
+
+<option value="Indian">Indian</option>
+
+<option value="canera">canera</option>
+
+<option value="SBI">SBI</option>
+
+<option value="Baroda">Baroda</option>
+
+<option value="kotack">kotack</option>
+
+</select>
+ 
+</td>
+
+</tr>
+
+<tr>
+
+<td><input type="radio" size="20"></td>
+
+<td><font class="att"> Other UPI Apps</font><br>
+</td>
+
+</tr>
+
+</form>
+
+</table><br><br>
+
+<a href="confirm.html">
+<button class="rest" onclick="alert('Are sure continue this transaction!')">
+	<font class="button_size">CONTINUE</font></button>
+</a><br>
+
+</fieldset>
+
+</center>
+
+</div>
+
+</body>
+
+</html>
